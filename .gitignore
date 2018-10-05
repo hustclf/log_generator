@@ -1,0 +1,4 @@
+# ignore dir
+data/
+.idea/
+app/__pycache__/*
