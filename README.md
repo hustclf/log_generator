@@ -29,7 +29,7 @@ optional arguments:
 
 ```
 
-## 1.requirement:
+## 1. requirement:
 ```
 python3.6.5 or later
 ```
@@ -39,34 +39,34 @@ python3.6.5 or later
 pipenv install --python 3.6.5
 ```
 
-# 3. run
+## 3. run
 ```bash
 # pipenv shell
 # python logGenerator.py -o ./data/demo.log -c ./conf/demo.json -d "2017-11-15 18:04:00" -i 0.1 -a demo
 ```
 
-# 4. UserCases
-## generate logs between two timestamp (default total: 100)
+## 4. UserCases
+### generate logs between two timestamp (default total: 100)
 ```
 # python logGenerator.py -d "2017-11-15 18:04:00" -e "2017-11-16 18:04:00" -a demo
 ```
 
-## generate logs at beginning with certain timestamp to now
+### generate logs at beginning with certain timestamp to now
 ```
 # python logGenerator.py -d "2017-11-15 18:04:00" -e now -a demo
 ```
 
-## generate logs at beginning with certain timestamp and fixed interval (ie: 100 ms)
+### generate logs at beginning with certain timestamp and fixed interval (ie: 100 ms)
 ```
 # python logGenerator.py -d "2017-11-15 18:04:00" -i 0.1 -a demo
 ```
 
-## generate logs with certain end timestamp and fixed interval (ie: 100 ms)
+### generate logs with certain end timestamp and fixed interval (ie: 100 ms)
 ```
 # python logGenerator.py -e "2017-11-15 18:04:00" -i 0.1 -a demo
 ```
 
-## generate logs with custom total logs (default 100)
+### generate logs with custom total logs (default 100)
 ```
 # python logGenerator.py -d "2017-11-15 18:04:00" -e now -t 100 -a demo
 ```
